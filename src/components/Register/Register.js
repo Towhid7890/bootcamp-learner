@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
-    <div>
+    <>
       <div className="text-center mt-16 w-4/5 lg:w-1/2 mx-auto login-container">
         <h1 className="text-2xl lg:text-5xl font-bold text-amber-600">
           Please Register !!
@@ -12,11 +12,25 @@ const Register = () => {
         <form className="py-4">
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-amber-600 text-base">Name</span>
+              <span className="label-text text-amber-600 text-base">
+                Full Name
+              </span>
             </label>
             <input
               type="text"
-              placeholder="Name"
+              placeholder="Full Name"
+              className="input input-bordered"
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text text-amber-600 text-base">
+                Your PhotoURL
+              </span>
+            </label>
+            <input
+              type="text"
+              placeholder="PhotoURL"
               className="input input-bordered"
             />
           </div>
@@ -55,7 +69,7 @@ const Register = () => {
         </div>
         <SocialLogin></SocialLogin>
       </div>
-    </div>
+    </>
   );
 };
 

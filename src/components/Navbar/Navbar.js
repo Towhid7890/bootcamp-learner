@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
+import logo from "../../images/logo (1).png";
 const Navbar = () => {
   return (
     <div style={{ backgroundColor: "#383838" }} className="navbar text-white">
@@ -38,7 +39,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-2xl">PhotoMan</a>
+        <Link to="/" className="btn btn-ghost normal-case text-2xl">
+          <img style={{ height: "40px" }} src={logo} alt="" />
+          Learner
+        </Link>
       </div>
 
       <div className="navbar-end hidden lg:flex">
@@ -46,7 +50,10 @@ const Navbar = () => {
           Home
         </NavLink>
         <NavLink to="/about" className="btn btn-ghost normal-case">
-          About
+          Courses
+        </NavLink>
+        <NavLink to="/about" className="btn btn-ghost normal-case">
+          FAQ
         </NavLink>
         <NavLink to="/blog" className="btn btn-ghost normal-case">
           Blog
