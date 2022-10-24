@@ -1,6 +1,7 @@
 import React from "react";
 import slider from "../../images/banner.png";
 import Education from "./Education";
+import HomeCourse from "./HomeCourse";
 const Home = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Home = () => {
         </div>
       </div>
       <Education></Education>
+      <HomeCourse></HomeCourse>
     </>
   );
 };
