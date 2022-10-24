@@ -16,7 +16,7 @@ const CourseList = () => {
       </h2>
       {courses.map((course) => (
         <p className="text-amber-600 text-xl">
-          <Link to={`/courses/${course.id}`} key={course.id}>
+          <Link to={`categories/${course.id}`} key={course.id}>
             {course.name}
           </Link>
         </p>

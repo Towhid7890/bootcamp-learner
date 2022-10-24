@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Allcourses from "../Home/Allcourses";
+import CourseCategory from "../Home/CourseCategory";
+import CourseDetails from "../Home/CourseDetails";
 import Courses from "../Home/Courses";
 import Notfound from "../Notfound/Notfound";
 import Main from "./../Layout/Main";
@@ -30,6 +32,20 @@ export const router = createBrowserRouter([
         path: "/courses",
         loader: () => fetch("http://localhost:5000/courses"),
         element: <Allcourses></Allcourses>,
+      },
+      {
+        path: "categories/:id",
+        loader: async ({ params }) => {
+          return fetch(`http://localhost:5000/category/${params.id}`);
+        },
+        element: <CourseCategory></CourseCategory>,
+      },
+      {
+        path: "/courses/:id",
+        loader: async ({ params }) => {
+          return fetch(`http://localhost:5000/course/${params.id}`);
+        },
+        element: <CourseDetails></CourseDetails>,
       },
     ],
   },
