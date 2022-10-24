@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import google from "../../images/icons/google.png";
 import facebook from "../../images/icons/facebook.png";
 import github from "../../images/icons/github.png";
 import "./SocialLogin.css";
+import { MyContext } from "./../../context/AuthContext";
+import { GoogleAuthProvider } from "firebase/auth";
 
 const SocialLogin = () => {
+  const { providerLogin } = useContext(MyContext);
+  const googleProvider = new GoogleAuthProvider();
+  // for google sign in
+  const handleGoogleSignIn = () => {
+    providerLogin(googleProvider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
+  };
   return (
     <div className="py-5">
       <div className="flex items-center">
@@ -20,7 +36,12 @@ const SocialLogin = () => {
       </div>
       <div>
         <div className="icon-container flex justify-center mt-5">
-          <img className="bg-white" src={google} alt="" />
+          <img
+            onClick={handleGoogleSignIn}
+            className="bg-white"
+            src={google}
+            alt=""
+          />
           <img className="bg-white" src={facebook} alt="" />
           <img className="bg-white" src={github} alt="" />
         </div>
