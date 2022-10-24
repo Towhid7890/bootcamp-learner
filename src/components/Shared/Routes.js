@@ -3,6 +3,7 @@ import Allcourses from "../Home/Allcourses";
 import CourseCategory from "../Home/CourseCategory";
 import CourseDetails from "../Home/CourseDetails";
 import Courses from "../Home/Courses";
+import Home from "../Home/Home";
 import Notfound from "../Notfound/Notfound";
 import Main from "./../Layout/Main";
 import Login from "./../Login/Login";
@@ -14,6 +15,14 @@ export const router = createBrowserRouter([
     element: <Main></Main>,
     errorElement: <Notfound></Notfound>,
     children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/home",
+        element: <Home></Home>,
+      },
       {
         path: "/login",
         element: <Login></Login>,
