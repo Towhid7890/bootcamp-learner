@@ -26,12 +26,14 @@ const HomeCourse = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">
+                <h2 className="card-title text-amber-600">
                   Shoes!
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
+                <p className="text-amber-600">
+                  If a dog chews shoes whose shoes does he choose?
+                </p>
+                <div className="card-actions justify-end text-amber-600">
                   <div className="badge badge-outline">Fashion</div>
                   <div className="badge badge-outline">Products</div>
                 </div>
@@ -47,12 +49,14 @@ const HomeCourse = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">
+                <h2 className="card-title text-amber-600">
                   Shoes!
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
+                <p className="text-amber-600">
+                  If a dog chews shoes whose shoes does he choose?
+                </p>
+                <div className="card-actions justify-end text-amber-600">
                   <div className="badge badge-outline">Fashion</div>
                   <div className="badge badge-outline">Products</div>
                 </div>
@@ -91,12 +95,14 @@ const HomeCourse = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">
+                <h2 className="card-title text-amber-600">
                   Shoes!
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
+                <p className="text-amber-600">
+                  If a dog chews shoes whose shoes does he choose?
+                </p>
+                <div className="card-actions justify-end text-amber-600">
                   <div className="badge badge-outline">Fashion</div>
                   <div className="badge badge-outline">Products</div>
                 </div>
@@ -114,12 +120,16 @@ const HomeCourse = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">
+                <h2 className="card-title text-amber-600">
                   Shoes!
-                  <div className="badge badge-secondary">NEW</div>
+                  <div className="badge badge-secondary text-amber-600">
+                    NEW
+                  </div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
+                <p className="text-amber-600">
+                  If a dog chews shoes whose shoes does he choose?
+                </p>
+                <div className="card-actions justify-end text-amber-600">
                   <div className="badge badge-outline">Fashion</div>
                   <div className="badge badge-outline">Products</div>
                 </div>
@@ -135,14 +145,16 @@ const HomeCourse = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">
+                <h2 className="card-title text-amber-600">
                   Shoes!
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
+                <p className="text-amber-600">
+                  If a dog chews shoes whose shoes does he choose?
+                </p>
+                <div className="card-actions justify-end text-amber-500">
                   <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Price:$50</div>
                 </div>
               </div>
             </div>

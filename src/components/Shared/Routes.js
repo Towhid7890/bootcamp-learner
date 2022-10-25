@@ -5,6 +5,7 @@ import CourseDetails from "../Home/CourseDetails";
 import Courses from "../Home/Courses";
 import Home from "../Home/Home";
 import Notfound from "../Notfound/Notfound";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Main from "./../Layout/Main";
 import Login from "./../Login/Login";
 import Register from "./../Register/Register";
@@ -54,7 +55,11 @@ export const router = createBrowserRouter([
         loader: async ({ params }) => {
           return fetch(`http://localhost:5000/course/${params.id}`);
         },
-        element: <CourseDetails></CourseDetails>,
+        element: (
+          <PrivateRoute>
+            <CourseDetails></CourseDetails>
+          </PrivateRoute>
+        ),
       },
     ],
   },
