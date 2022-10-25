@@ -15,7 +15,7 @@ const CourseList = () => {
         Number of Courses : {courses.length}
       </h2>
       {courses.map((course) => (
-        <p className="text-amber-600 text-xl">
+        <p key={course.id} className="text-amber-600 text-xl">
           <Link to={`categories/${course.id}`} key={course.id}>
             {course.name}
           </Link>

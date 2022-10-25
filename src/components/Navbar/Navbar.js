@@ -5,6 +5,7 @@ import logo from "../../images/logo (1).png";
 import { MyContext } from "../../context/AuthContext";
 const Navbar = () => {
   const { user, logOut } = useContext(MyContext);
+  console.log(user);
   // signOut handle
   const handleLogout = () => {
     logOut()
@@ -70,8 +71,20 @@ const Navbar = () => {
         <NavLink to="/blog" className="btn btn-ghost normal-case">
           Blog
         </NavLink>
-        {user.uid ? (
-          <>Log Out</>
+        {user?.uid ? (
+          <>
+            <div className="avatar">
+              <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <img src={user?.photoURL} />
+              </div>
+            </div>
+            <NavLink
+              onClick={handleLogout}
+              className="btn btn-ghost normal-case"
+            >
+              <button className="btn btn-sm ms-3"> Log Out</button>
+            </NavLink>
+          </>
         ) : (
           <>
             <NavLink to="/login" className="btn btn-ghost normal-case">

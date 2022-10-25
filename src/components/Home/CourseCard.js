@@ -6,7 +6,12 @@ const CourseCard = ({ course }) => {
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure className="pt-4">
-        <img className="w-11/12" src={image_url} alt="Shoes" />
+        <img
+          className="w-11/12"
+          style={{ height: "230px" }}
+          src={image_url}
+          alt="Shoes"
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title">
