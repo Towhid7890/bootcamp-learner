@@ -16,7 +16,7 @@ const HomeCourse = () => {
       <div className="py-5">
         <div className="carousel mx-auto w-4/5">
           <div id="item1" className="carousel-item w-full gap-4">
-            <div className="card bg-black shadow-xl w-1/2">
+            <div className="card hidden lg:flex bg-black shadow-xl w-1/2">
               <figure>
                 <img
                   style={{ height: "270px" }}
@@ -27,19 +27,51 @@ const HomeCourse = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-amber-600">
-                  Shoes!
+                  Learn React: The Modern Web Programming
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p className="text-amber-600">
-                  If a dog chews shoes whose shoes does he choose?
+                  Teaching over 250,000 students on Udemy alone, he's helped
+                  tens of thousands of people learn web development. From zero
+                  to hero and novice to ninja, he's considered a top teacher by
+                  thousands.
                 </p>
                 <div className="card-actions justify-end text-amber-600">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="">
+                    <div className="rating">
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                        checked
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                    </div>
+                  </div>
+                  <div className="badge badge-outline">By Jhon Mosh</div>
                 </div>
               </div>
             </div>
-            <div className="card w-1/2 bg-black shadow-xl">
+            <div className="card w-full md:full lg:w-1/2 bg-black shadow-xl">
               <figure>
                 <img
                   style={{ height: "270px" }}
@@ -50,21 +82,53 @@ const HomeCourse = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-amber-600">
-                  Shoes!
+                  Learn Python: The Complete Python Programming
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p className="text-amber-600">
-                  If a dog chews shoes whose shoes does he choose?
+                  Teaching over 250,000 students on Udemy alone, he's helped
+                  tens of thousands of people learn web development. From zero
+                  to hero and novice to ninja, he's considered a top teacher by
+                  thousands.
                 </p>
                 <div className="card-actions justify-end text-amber-600">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="">
+                    <div className="rating">
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                        checked
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                    </div>
+                  </div>
+                  <div className="badge badge-outline">By Web Hero</div>
                 </div>
               </div>
             </div>
           </div>
           <div id="item2" className="carousel-item w-full gap-4">
-            <div className="card bg-black shadow-xl w-1/2">
+            <div className="card hidden lg:flex bg-black shadow-xl w-1/2">
               <figure>
                 <img
                   style={{ height: "270px" }}
@@ -74,18 +138,54 @@ const HomeCourse = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">
-                  Shoes!
+                <h2 className="card-title text-amber-600">
+                  Learn Web Fundamental with JavaScript
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p className="text-amber-600">
+                  Teaching over 250,000 students on Udemy alone, he's helped
+                  tens of thousands of people learn web development. From zero
+                  to hero and novice to ninja, he's considered a top teacher by
+                  thousands.
+                </p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="">
+                    <div className="rating">
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                        checked
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                    </div>
+                  </div>
+                  <div className="badge badge-outline text-amber-600">
+                    By Androw JOhn
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="card bg-black shadow-xl w-1/2">
+            <div className="card bg-black shadow-xl w-full md:w-full lg:w-1/2">
               <figure>
                 <img
                   className="w-full"
@@ -96,21 +196,53 @@ const HomeCourse = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-amber-600">
-                  Shoes!
+                  Learn Modern Data Science
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p className="text-amber-600">
-                  If a dog chews shoes whose shoes does he choose?
+                  Teaching over 250,000 students on Udemy alone, he's helped
+                  tens of thousands of people learn web development. From zero
+                  to hero and novice to ninja, he's considered a top teacher by
+                  thousands.
                 </p>
                 <div className="card-actions justify-end text-amber-600">
-                  <div className="badge badge-outline">Fashion</div>
+                  <div className="">
+                    <div className="rating">
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                        checked
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                    </div>
+                  </div>
                   <div className="badge badge-outline">Products</div>
                 </div>
               </div>
             </div>
           </div>
           <div id="item3" className="carousel-item w-full gap-4">
-            <div className="card bg-black shadow-xl w-1/2">
+            <div className="card hidden lg:flex bg-black shadow-xl w-1/2">
               <figure>
                 <img
                   style={{ height: "270px" }}
@@ -121,21 +253,53 @@ const HomeCourse = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-amber-600">
-                  Shoes!
+                  Advance Data Science
                   <div className="badge badge-secondary text-amber-600">
                     NEW
                   </div>
                 </h2>
                 <p className="text-amber-600">
-                  If a dog chews shoes whose shoes does he choose?
+                  Teaching over 250,000 students on Udemy alone, he's helped
+                  tens of thousands of people learn web development. From zero
+                  to hero and novice to ninja, he's considered a top teacher by
+                  thousands.
                 </p>
                 <div className="card-actions justify-end text-amber-600">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="">
+                    <div className="rating">
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                        checked
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                    </div>
+                  </div>
+                  <div className="badge badge-outline">By Ph Hero</div>
                 </div>
               </div>
             </div>
-            <div className="card bg-black shadow-xl w-1/2">
+            <div className="card bg-black shadow-xl w-full lg:w-1/2">
               <figure>
                 <img
                   style={{ height: "270px" }}
@@ -146,15 +310,47 @@ const HomeCourse = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-amber-600">
-                  Shoes!
+                  Learn Advance React
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p className="text-amber-600">
-                  If a dog chews shoes whose shoes does he choose?
+                  Teaching over 250,000 students on bootcamp alone, he's helped
+                  tens of thousands of people learn web development. From zero
+                  to hero and novice to ninja, he's considered a top teacher by
+                  thousands.
                 </p>
                 <div className="card-actions justify-end text-amber-500">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Price:$50</div>
+                  <div className="">
+                    <div className="rating">
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                        checked
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        className="mask mask-star-2 bg-orange-400"
+                      />
+                    </div>
+                  </div>
+                  <div className="badge badge-outline">Thohidul Islam</div>
                 </div>
               </div>
             </div>

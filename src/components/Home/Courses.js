@@ -7,11 +7,11 @@ const Courses = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="flex">
-        <div className="w-4/5">
+      <div className="flex flex-col-reverse lg:flex-row">
+        <div className="w-full p-2 md:w-full lg:w-4/5">
           <Outlet></Outlet>
         </div>
-        <div className="">
+        <div className="ml-5 lg:ml-0">
           <CourseList></CourseList>
         </div>
       </div>
