@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blog from "../Blog/Blog";
 import CheckOut from "../CheckOut/CheckOut";
+import Faq from "../Faq/Faq";
 import Allcourses from "../Home/Allcourses";
 import CourseCategory from "../Home/CourseCategory";
 import CourseDetails from "../Home/CourseDetails";
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
         element: <Blog></Blog>,
       },
       {
+        path: "/faq",
+        element: <Faq></Faq>,
+      },
+      {
         path: "/login",
         element: <Login></Login>,
       },
@@ -46,27 +51,33 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/courses",
-        loader: () => fetch("http://localhost:5000/courses"),
+        loader: () => fetch("https://bootcamp-server.vercel.app/courses"),
         element: <Allcourses></Allcourses>,
       },
       {
         path: "categories/:id",
         loader: async ({ params }) => {
-          return fetch(`http://localhost:5000/category/${params.id}`);
+          return fetch(
+            `https://bootcamp-server.vercel.app/category/${params.id}`
+          );
         },
         element: <CourseCategory></CourseCategory>,
       },
       {
         path: "/courses/:id",
         loader: async ({ params }) => {
-          return fetch(`http://localhost:5000/course/${params.id}`);
+          return fetch(
+            `https://bootcamp-server.vercel.app/course/${params.id}`
+          );
         },
         element: <CourseDetails></CourseDetails>,
       },
       {
         path: "/courses/check/:id",
         loader: async ({ params }) => {
-          return fetch(`http://localhost:5000/course/${params.id}`);
+          return fetch(
+            `https://bootcamp-server.vercel.app/course/${params.id}`
+          );
         },
         element: (
           <PrivateRoute>

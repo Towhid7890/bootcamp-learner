@@ -4,18 +4,37 @@ import facebook from "../../images/icons/facebook.png";
 import github from "../../images/icons/github.png";
 import "./SocialLogin.css";
 import { MyContext } from "./../../context/AuthContext";
-import { GoogleAuthProvider } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SocialLogin = () => {
   const [error, setError] = useState("");
   const { providerLogin } = useContext(MyContext);
   const googleProvider = new GoogleAuthProvider();
+  const gitProvider = new GithubAuthProvider();
+  const navigate = useNavigate();
+  let location = useLocation();
+  let from = location.state?.from?.pathname || "/";
+  // for githyb sign in with
+  const handleGithubSignIn = () => {
+    providerLogin(gitProvider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        navigate(from, { replace: true });
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        setError(errorMessage);
+      });
+  };
   // for google sign in
   const handleGoogleSignIn = () => {
     providerLogin(googleProvider)
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -45,7 +64,12 @@ const SocialLogin = () => {
             alt=""
           />
           <img className="bg-white" src={facebook} alt="" />
-          <img className="bg-white" src={github} alt="" />
+          <img
+            onClick={handleGithubSignIn}
+            className="bg-white"
+            src={github}
+            alt=""
+          />
         </div>
       </div>
     </div>

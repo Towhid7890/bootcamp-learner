@@ -65,7 +65,7 @@ const Navbar = () => {
         <NavLink to="/courses" className="btn btn-ghost normal-case">
           Courses
         </NavLink>
-        <NavLink to="/about" className="btn btn-ghost normal-case">
+        <NavLink to="/faq" className="btn btn-ghost normal-case">
           FAQ
         </NavLink>
         <NavLink to="/blog" className="btn btn-ghost normal-case">
