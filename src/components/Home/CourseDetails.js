@@ -17,7 +17,10 @@ const CourseDetails = () => {
           Find details in PDF{" "}
         </h2>
 
-        <PDFDownloadLink document={<Reactpdf />} filename="FORM">
+        <PDFDownloadLink
+          document={<Reactpdf details={details} />}
+          filename="FORM"
+        >
           {({ loading }) =>
             loading ? (
               <button>Loading Document...</button>

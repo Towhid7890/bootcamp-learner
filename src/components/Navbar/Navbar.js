@@ -5,7 +5,13 @@ import logo from "../../images/logo (1).png";
 import { MyContext } from "../../context/AuthContext";
 const Navbar = () => {
   const { user, logOut } = useContext(MyContext);
-  console.log(user);
+  const handleToggle = (e) => {
+    if (e.target.checked === true) {
+      document.body.style = "background: #0F1729;";
+    } else {
+      document.body.style = "background: black;";
+    }
+  };
   // signOut handle
   const handleLogout = () => {
     logOut()
@@ -17,7 +23,10 @@ const Navbar = () => {
       });
   };
   return (
-    <div style={{ backgroundColor: "#383838" }} className="navbar text-white">
+    <div
+      style={{ backgroundColor: "#383838" }}
+      className="navbar sticky text-white"
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -97,7 +106,7 @@ const Navbar = () => {
           </>
         )}
         <>
-          <input type="checkbox" className="toggle" />
+          <input type="checkbox" onClick={handleToggle} className="toggle" />
         </>
       </div>
     </div>
