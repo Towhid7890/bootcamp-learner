@@ -1,10 +1,26 @@
-# Getting Started with Create React App
+# Getting Started with BootCamp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Find Live site [Click Here](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Features of the Project
 
-In the project directory, you can run:
+- The Project design with React,tailwind,daisy Ui, react hot toast, react to pdf and for server site i use node and express js.
+
+- Well Designed and Functional
+
+Responsive
+
+Dynamic and Private Routing
+
+User can get two type of services one is instant drink and another is home delivery
+
+User can add a product at the cart.
+
+Stripe used as payment process.
+
+Firebase Authentication
+
+Sign in and Sign up using Google and Facebook and Github
 
 ### `npm start`
 

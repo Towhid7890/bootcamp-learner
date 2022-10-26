@@ -5,10 +5,6 @@ import { PDFDownloadLink } from "@react-pdf/renderer";
 import Reactpdf from "./../Reactpdf";
 const CourseDetails = () => {
   const details = useLoaderData();
-  console.log(details);
-  // const handlePdf = () => {
-
-  // };
 
   return (
     <>
