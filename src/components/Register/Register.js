@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import SocialLogin from "./../SocialLogin/SocialLogin";
 import { Link, useNavigate } from "react-router-dom";
 import { MyContext } from "../../context/AuthContext";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const { createUser, updateUserProfile } = useContext(MyContext);
@@ -30,6 +31,7 @@ const Register = () => {
           .catch((error) => {
             setError(error.message);
           });
+        toast.success("Thanks for Register");
         navigate("/login");
       })
       .catch((error) => {

@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import toast from "react-hot-toast";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { MyContext } from "../../context/AuthContext";
 import SocialLogin from "../SocialLogin/SocialLogin";
@@ -19,6 +20,7 @@ const Login = () => {
     userLogin(email, password)
       .then((result) => {
         const user = result.user;
+        toast.success("Successfully login");
         navigate(from, { replace: true });
       })
       .catch((error) => {
