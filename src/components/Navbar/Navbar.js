@@ -85,10 +85,10 @@ const Navbar = () => {
               </>
             ) : (
               <>
-                <NavLink to="/login" className="btn btn-ghost normal-case">
+                <NavLink to="/login" className=" normal-case">
                   Login
                 </NavLink>
-                <NavLink to="/register" className="btn btn-ghost normal-case">
+                <NavLink to="/register" className=" normal-case">
                   Sign Up
                 </NavLink>
               </>

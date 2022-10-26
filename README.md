@@ -1,6 +1,6 @@
 # Getting Started with BootCamp
 
-Find Live site [Click Here](https://github.com/facebook/create-react-app).
+Find Live site [Click Here](https://bootcamp-12b6c.web.app).
 
 ## Features of the Project
 
@@ -30,3 +30,8 @@ npm start
 ### About project tasks:
 
 In this project any user can teach some different types of courses which is related with some Programming knowledge and language.
+
+### Firebase hosting project
+
+npm run build
+deploy firebase
