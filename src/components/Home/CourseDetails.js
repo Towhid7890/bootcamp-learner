@@ -1,14 +1,13 @@
 import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
-import ReactPDF from "@react-pdf/renderer";
-import { PDFViewer } from "@react-pdf/renderer";
-import Reactpdf from "../Reactpdf";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import Reactpdf from "./../Reactpdf";
 const CourseDetails = () => {
   const details = useLoaderData();
   console.log(details);
   // const handlePdf = () => {
-  //   ReactPDF.render(`${__dirname}/react.pdf`);
+
   // };
 
   return (
@@ -17,9 +16,16 @@ const CourseDetails = () => {
         <h2 className="text-white text-3xl text-center">
           Find details in PDF{" "}
         </h2>
-        <a href="#" className="text-center text-3xl text-amber-600">
-          <FaDownload></FaDownload>
-        </a>
+
+        <PDFDownloadLink document={<Reactpdf />} filename="FORM">
+          {({ loading }) =>
+            loading ? (
+              <button>Loading Document...</button>
+            ) : (
+              <FaDownload className="text-amber-600 text-3xl"></FaDownload>
+            )
+          }
+        </PDFDownloadLink>
       </div>
       <div
         style={{
