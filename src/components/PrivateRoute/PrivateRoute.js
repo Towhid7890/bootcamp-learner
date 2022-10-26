@@ -5,7 +5,11 @@ const PrivateRoute = ({ children }) => {
   const { user, loading } = useContext(MyContext);
   let location = useLocation();
   if (loading) {
-    return <button className="btn loading">loading</button>;
+    return (
+      <div className="text-center">
+        <button className="btn loading">loading</button>
+      </div>
+    );
   }
 
   if (!user) {

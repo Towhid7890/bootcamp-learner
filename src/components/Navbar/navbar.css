@@ -1,3 +1,27 @@
 .navbar-end a {
     font-size: 18px;
 }
+
+.tool {
+    position: relative;
+
+
+}
+
+.tooltiptext {
+    visibility: hidden;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+
+
+}
+
+.tool:hover .tooltiptext {
+    visibility: visible;
+}

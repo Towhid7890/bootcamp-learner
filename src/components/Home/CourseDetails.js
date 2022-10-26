@@ -1,10 +1,26 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
-
+import { Link, useLoaderData } from "react-router-dom";
+import { FaDownload } from "react-icons/fa";
+import ReactPDF from "@react-pdf/renderer";
+import { PDFViewer } from "@react-pdf/renderer";
+import Reactpdf from "../Reactpdf";
 const CourseDetails = () => {
   const details = useLoaderData();
+  console.log(details);
+  // const handlePdf = () => {
+  //   ReactPDF.render(`${__dirname}/react.pdf`);
+  // };
+
   return (
     <>
+      <div className="py-5 flex justify-center">
+        <h2 className="text-white text-3xl text-center">
+          Find details in PDF{" "}
+        </h2>
+        <a href="#" className="text-center text-3xl text-amber-600">
+          <FaDownload></FaDownload>
+        </a>
+      </div>
       <div
         style={{
           boxShadow:
@@ -19,13 +35,18 @@ const CourseDetails = () => {
             className="rounded-xl w-full"
           />
         </figure>
-        <div className="card-body items-center text-center">
+        <div className="card-body">
           <h2 className="card-title text-amber-500 text-2xl">
             {details.title}
           </h2>
+
           <p className="text-amber-600">{details.details}</p>
+          <p className="text-amber-600">Ratting: {details.rating.number} </p>
+          <p className="text-amber-600">Instructor: {details.author.name}</p>
           <div className="card-actions">
-            <button className="btn btn-primary">Buy Now</button>
+            <Link to={`/courses/check/${details._id}`}>
+              <button className="btn btn-primary">Get premium access</button>
+            </Link>
           </div>
         </div>
       </div>

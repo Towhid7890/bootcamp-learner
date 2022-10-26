@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Shared/Footer";
 import CourseList from "./CourseList";
 
 const Courses = () => {
@@ -15,6 +16,7 @@ const Courses = () => {
           <CourseList></CourseList>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

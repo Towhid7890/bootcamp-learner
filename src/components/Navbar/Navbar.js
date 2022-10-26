@@ -73,10 +73,11 @@ const Navbar = () => {
         </NavLink>
         {user?.uid ? (
           <>
-            <div className="avatar">
+            <div className="avatar tool ">
               <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img src={user?.photoURL} />
               </div>
+              <span class="tooltiptext text-white">{user?.displayName}</span>
             </div>
             <NavLink
               onClick={handleLogout}
@@ -95,6 +96,9 @@ const Navbar = () => {
             </NavLink>
           </>
         )}
+        <>
+          <input type="checkbox" className="toggle" />
+        </>
       </div>
     </div>
   );

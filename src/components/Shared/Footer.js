@@ -3,13 +3,13 @@ import logo from "../../images/logo (1).png";
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 text-amber-600">
+    <footer className="footer p-10 text-amber-600 mt-10">
       <div>
         <img src={logo} alt="" />
         <p>
-          ACME Industries Ltd.
+          Explore the World
           <br />
-          Providing reliable tech since 1992
+          All rights reserved -2022
         </p>
       </div>
       <div>
