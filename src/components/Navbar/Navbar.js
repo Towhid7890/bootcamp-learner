@@ -55,10 +55,51 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/About" className="text-base">
-                About
+              <Link to="/courses" className="normal-case">
+                Courses
               </Link>
             </li>
+            <li>
+              <NavLink to="/faq" className=" normal-case">
+                FAQ
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/blog" className=" normal-case">
+                Blog
+              </NavLink>
+            </li>
+            {user?.uid ? (
+              <>
+                <div className="avatar tool ">
+                  <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                    <img src={user?.photoURL} />
+                  </div>
+                  <span class="tooltiptext text-white">
+                    {user?.displayName}
+                  </span>
+                </div>
+                <NavLink onClick={handleLogout} className="mt-2 normal-case">
+                  <button className="btn btn-sm ms-3"> Log Out</button>
+                </NavLink>
+              </>
+            ) : (
+              <>
+                <NavLink to="/login" className="btn btn-ghost normal-case">
+                  Login
+                </NavLink>
+                <NavLink to="/register" className="btn btn-ghost normal-case">
+                  Sign Up
+                </NavLink>
+              </>
+            )}
+            <>
+              <input
+                type="checkbox"
+                onClick={handleToggle}
+                className="toggle"
+              />
+            </>
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost normal-case text-2xl">
