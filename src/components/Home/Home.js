@@ -1,7 +1,10 @@
 import React from "react";
 import slider from "../../images/banner.png";
 import Education from "./Education";
+import Faq from "../Faq/Faq";
 import HomeCourse from "./HomeCourse";
+import Add from "../Add/Add";
+import Review from "./Review";
 const Home = () => {
   return (
     <>
@@ -22,7 +25,10 @@ const Home = () => {
         </div>
       </div>
       <Education></Education>
+      <Add></Add>
       <HomeCourse></HomeCourse>
+      <Review></Review>
+      <Faq></Faq>
     </>
   );
 };

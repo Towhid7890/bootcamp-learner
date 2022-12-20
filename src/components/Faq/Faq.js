@@ -2,7 +2,7 @@ import React from "react";
 import "./faq.css";
 const Faq = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 py-12">
       <h2 className="text-center text-3xl text-amber-600">
         All of Our Frequently Ask Question
       </h2>

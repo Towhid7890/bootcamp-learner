@@ -7,7 +7,7 @@ import web from "../../images/web.jpg";
 import { Link } from "react-router-dom";
 const HomeCourse = () => {
   return (
-    <div className="bg-white py-5">
+    <div className="bg-white py-12">
       <div className="py-5">
         <h1 className="text-center font-bold text-4xl">
           Explore All of Our Courses

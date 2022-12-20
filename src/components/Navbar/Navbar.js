@@ -69,6 +69,11 @@ const Navbar = () => {
                 Blog
               </NavLink>
             </li>
+            <li>
+              <Link to="/contact" className="normal-case">
+                Contact
+              </Link>
+            </li>
             {user?.uid ? (
               <>
                 <div className="avatar tool ">
@@ -120,6 +125,9 @@ const Navbar = () => {
         </NavLink>
         <NavLink to="/blog" className="btn btn-ghost normal-case">
           Blog
+        </NavLink>
+        <NavLink to="/contact" className="btn btn-ghost normal-case">
+          Contact
         </NavLink>
         {user?.uid ? (
           <>
